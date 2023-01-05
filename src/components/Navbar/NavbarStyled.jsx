@@ -1,4 +1,6 @@
-nav {
+import styled from "styled-components";
+
+export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,49 +11,49 @@ nav {
   background-color: #fff;
   z-index: 1;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-}
+`;
 
-img {
+export const ImageLogo = styled.img`
   width: 8rem;
   height: 3.5rem;
   object-fit: cover;
   cursor: pointer;
-}
+`;
 
-div.input-search-space {
+export const InputSpace = styled.div`
   position: relative;
   width: 200px;
   display: flex;
   align-items: center;
-}
 
-i.bi-search {
-  position: absolute;
-  top: 1;
-  right: 0.2rem;
-  z-index: 10;
-  border: none;
-  background-color: #f5f5f5;
-  color: #757575;
-  border-radius: 0.3rem;
-  padding: 0.5rem;
-}
+  i {
+    position: absolute;
+    top: 1;
+    right: 0.2rem;
+    z-index: 10;
+    border: none;
+    background-color: #f5f5f5;
+    color: #757575;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+  }
 
-div.input-search-space input {
-  outline: none;
-  font-size: 1rem;
-  padding: 0.6rem;
-  background-color: #f5f5f5;
-  border: none;
-  width: 100%;
-  border-radius: 0.3rem;
-}
+  input {
+    outline: none;
+    font-size: 1rem;
+    padding: 0.6rem;
+    background-color: #f5f5f5;
+    border: none;
+    width: 100%;
+    border-radius: 0.3rem;
 
-div.input-search-space input:focus {
-  border: 1px solid #0bade3;
-}
+    :focus {
+      border: 1px solid #0bade3;
+    }
+  }
+`;
 
-button {
+export const Button = styled.button`
   background-color: #0bade3;
   border: none;
   outline: none;
@@ -66,8 +68,8 @@ button {
   font-weight: 500;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-}
 
-button:hover {
-  background-color: #0a86af;
-}
+  :hover {
+    background-color: #0a86af;
+  }
+`;
