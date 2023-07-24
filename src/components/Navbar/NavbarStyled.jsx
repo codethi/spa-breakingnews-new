@@ -26,7 +26,7 @@ export const InputSpace = styled.div`
   display: flex;
   align-items: center;
 
-  i {
+  button {
     position: absolute;
     top: 1;
     right: 0.2rem;
@@ -36,6 +36,13 @@ export const InputSpace = styled.div`
     color: #757575;
     border-radius: 0.3rem;
     padding: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    background-color: #757575;
+    color: #f5f5f5;
   }
 
   input {
@@ -72,4 +79,14 @@ export const Button = styled.button`
   :hover {
     background-color: #0a86af;
   }
+`;
+
+export const ErrorSpan = styled.span`
+  background-color: #ffaeae;
+  color: #9e0000;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: bold;
 `;
