@@ -75,7 +75,7 @@ export function Navbar() {
 
         {user ? (
           <UserLoggedSpace>
-            <Link to="/profile">
+            <Link to="/profile"  style={{textDecoration: 'none'}}>
               <h2>{user.name}</h2>
             </Link>
 
