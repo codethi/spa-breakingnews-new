@@ -26,3 +26,12 @@ export function getAllPostsByUser() {
   });
   return response;
 }
+
+export function createNews(body) {
+  const response = axios.post(`${baseURL}/posts/create`, body, {
+    headers: {
+      Authorization: `Bearer ${Cookies.get("token")}`,
+    },
+  });
+  return response;
+}
