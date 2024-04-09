@@ -8,6 +8,7 @@ export function Input({
   register,
   isInput = true,
   value: initialValue,
+  disabled,
 }) {
   const [value, setValue] = useState(initialValue);
   let inputProps = {
@@ -15,6 +16,7 @@ export function Input({
     placeholder,
     ...register(name),
     onChange: (e) => setValue(e.target.value),
+    disabled,
   };
   if (value) inputProps.value = value;
 
